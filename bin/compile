@@ -10,6 +10,7 @@ set -eo pipefail
 
 # Prepend proper path for virtualenv hackery. This will be deprecated soon.
 export PATH=:/usr/local/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/lib
 
 # Paths.
 BIN_DIR=$(cd $(dirname $0); pwd) # absolute path
